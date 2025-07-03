@@ -12,7 +12,7 @@ class AutoUvEnv < Formula
     bin.install "auto-uv-env"
 
     # Install shell integration files
-    (share/"auto-uv-env").install Dir["share/auto-uv-env/*"]
+    pkgshare.install Dir["share/auto-uv-env/*"]
   end
 
   def caveats
