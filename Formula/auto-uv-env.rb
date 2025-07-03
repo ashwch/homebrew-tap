@@ -10,14 +10,9 @@ class AutoUvEnv < Formula
 
   def install
     bin.install "auto-uv-env"
-    
+
     # Install shell integration files
     (share/"auto-uv-env").install Dir["share/auto-uv-env/*"]
-  end
-
-  test do
-    assert_match "auto-uv-env #{version}", shell_output("#{bin}/auto-uv-env --version")
-    assert_match "USAGE:", shell_output("#{bin}/auto-uv-env --help")
   end
 
   def caveats
@@ -37,5 +32,10 @@ class AutoUvEnv < Formula
         - UV must be installed: https://github.com/astral-sh/uv
         - Python projects must have a pyproject.toml file
     EOS
+  end
+
+  test do
+    assert_match "auto-uv-env #{version}", shell_output("#{bin}/auto-uv-env --version")
+    assert_match "USAGE:", shell_output("#{bin}/auto-uv-env --help")
   end
 end
