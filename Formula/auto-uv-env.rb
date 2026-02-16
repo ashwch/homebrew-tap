@@ -1,8 +1,8 @@
 class AutoUvEnv < Formula
   desc "Automatic UV-based Python virtual environment management"
   homepage "https://github.com/ashwch/auto-uv-env"
-  url "https://github.com/ashwch/auto-uv-env/archive/refs/tags/v1.1.1.tar.gz"
-  sha256 "0fe138ccd8fd7050e73e88c86aba0482219196502a071f1a7fc2eb3546952d30"
+  url "https://github.com/ashwch/auto-uv-env/archive/refs/tags/v1.1.2.tar.gz"
+  sha256 "0e3024638a60c1347096a0de33cd14d0d2469dc7b469fc7164403a1846133fb9"
   license "MIT"
   head "https://github.com/ashwch/auto-uv-env.git", branch: "main"
 
