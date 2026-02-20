@@ -1,4 +1,4 @@
-class EwATBeta < Formula
+class EwBeta < Formula
   desc "Fix failed shell commands and search command history using natural language"
   homepage "https://github.com/ashwch/ew"
   version "0.0.1-beta.2"
