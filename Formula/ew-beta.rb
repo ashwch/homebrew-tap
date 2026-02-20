@@ -1,26 +1,26 @@
 class EwBeta < Formula
   desc "Fix failed shell commands and search command history using natural language"
   homepage "https://github.com/ashwch/ew"
-  version "0.0.1-beta.2"
+  version "0.0.1-beta.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ashwch/ew/releases/download/v0.0.1-beta.2/ew_v0.0.1-beta.2_darwin_arm64.tar.gz"
-      sha256 "cad116d28c9596ecce7030915b33b0d5404e3c4a84681cc08def1e0314574ebf"
+      url "https://github.com/ashwch/ew/releases/download/v0.0.1-beta.1/ew_v0.0.1-beta.1_darwin_arm64.tar.gz"
+      sha256 "2124b1e5c2ab5572bfd2375255b7c011d0838f21c0bc190941abbe3f4c3ccca7"
     else
-      url "https://github.com/ashwch/ew/releases/download/v0.0.1-beta.2/ew_v0.0.1-beta.2_darwin_amd64.tar.gz"
-      sha256 "fbd125be9d5f91291cd5f44f1de3905716035bb3767e1765636f917cbaf350fa"
+      url "https://github.com/ashwch/ew/releases/download/v0.0.1-beta.1/ew_v0.0.1-beta.1_darwin_amd64.tar.gz"
+      sha256 "32ea98c7976ece505f1ceea3059690ca0f1d253d7d43a84f680a9e07a1607a89"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ashwch/ew/releases/download/v0.0.1-beta.2/ew_v0.0.1-beta.2_linux_arm64.tar.gz"
-      sha256 "54eea6191128f1773c5c58ce651e21e3f20f39c5aa2c0cef7d83dbc88de355a2"
+      url "https://github.com/ashwch/ew/releases/download/v0.0.1-beta.1/ew_v0.0.1-beta.1_linux_arm64.tar.gz"
+      sha256 "472117727d8885b585f4b54d11980a67983fb8ed3ae5d45d31b517da0cdfa461"
     else
-      url "https://github.com/ashwch/ew/releases/download/v0.0.1-beta.2/ew_v0.0.1-beta.2_linux_amd64.tar.gz"
-      sha256 "1c501bc780ba6d9280216c57cd1fc8b28f2a004b40d2d1c5a528a609257bd9f8"
+      url "https://github.com/ashwch/ew/releases/download/v0.0.1-beta.1/ew_v0.0.1-beta.1_linux_amd64.tar.gz"
+      sha256 "e05dab91b87abe3d45f229c10203f75544bb3199368ea6b1ac31acab7da27092"
     end
   end
 
