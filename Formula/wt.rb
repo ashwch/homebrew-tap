@@ -6,6 +6,7 @@ class Wt < Formula
   license "MIT"
   head "https://github.com/ashwch/wt.git", branch: "main"
 
+  depends_on "coreutils"
   depends_on "fzf"
   depends_on "git"
 
