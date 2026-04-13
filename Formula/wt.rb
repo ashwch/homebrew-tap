@@ -1,8 +1,8 @@
 class Wt < Formula
   desc "Interactive git worktree dashboard with fzf TUI"
   homepage "https://github.com/ashwch/wt"
-  url "https://github.com/ashwch/wt/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "7b9d9e7d057aaba9a1d62389f57d00e302a30b8777e75af1fc8f3f5ec7355c6c"
+  url "https://github.com/ashwch/wt/releases/download/v0.2.0/wt-0.2.0.tar.gz"
+  sha256 "1edb3a539f80add47e2f03b6a1d08a8989bfc0f38e894a19e0fe46d53d794dcb"
   license "MIT"
   head "https://github.com/ashwch/wt.git", branch: "main"
 
@@ -17,13 +17,20 @@ class Wt < Formula
 
   def caveats
     <<~EOS
-      To enable cd support, add to your ~/.zshrc:
+      To enable cd support, add the wrapper for your shell:
+
+      zsh:
         source #{HOMEBREW_PREFIX}/share/wt/wt.zsh
+
+      bash:
+        source #{HOMEBREW_PREFIX}/share/wt/wt.bash
     EOS
   end
 
   test do
     assert_match "wt #{version}", shell_output("#{bin}/wt --version")
     assert_match "USAGE", shell_output("#{bin}/wt --help")
+    assert_path_exists pkgshare/"wt.bash"
+    assert_path_exists pkgshare/"wt.zsh"
   end
 end
