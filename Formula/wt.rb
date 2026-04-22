@@ -1,8 +1,8 @@
 class Wt < Formula
   desc "Interactive git worktree dashboard with fzf TUI"
   homepage "https://github.com/ashwch/wt"
-  url "https://github.com/ashwch/wt/releases/download/v0.2.0/wt-0.2.0.tar.gz"
-  sha256 "1edb3a539f80add47e2f03b6a1d08a8989bfc0f38e894a19e0fe46d53d794dcb"
+  url "https://github.com/ashwch/wt/releases/download/v0.3.0/wt-0.3.0.tar.gz"
+  sha256 "74c47a328814c00668170b44d9c42a10d623f2c48b3358cb8211f9aa101ade19"
   license "MIT"
   head "https://github.com/ashwch/wt.git", branch: "main"
 
